@@ -80,9 +80,9 @@ matrix3 xform = ch3("xform");
 // it will be evaluated
 float up = chf("../params_1/move_up");
 
-
+v@P         //The position of the current element
 // apply variables to attributes
-v@P.y += y*5;
+v@P.y += y*5; v@P         //The position of the current element
 v@Cd = col;
 v@P *= xform;
 v@P.y += up;
